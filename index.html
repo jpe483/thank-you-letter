@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(135deg, #1f2233, #2a2e45, #1c1f2e);
+            margin: 0;
+            padding: 0;
+            color: #D8A7B1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #4B4E6D;
+            padding: 50px;
+            border-radius: 18px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            color: #c6b7f2;
+            margin-bottom: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        p strong {
+            color: #FAF3F0;
+        }
+
+        p {
+            line-height: 1.9;
+            font-size: 17px;
+            color: #e3e3f0;
+        }
+
+        ul {
+            line-height: 2;
+            padding-left: 25px;
+            color: #e8e8f7;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #3b3f63, #353a58);
+            padding: 25px;
+            border-left: 6px solid #b8a7f0;
+            margin: 40px 0;
+            border-radius: 12px;
+        }
+
+        .highlight p {
+            margin-top: 0;
+            font-weight: bold;
+            color: #cfc4ff;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid #4a4e75;
+            text-align: center;
+            font-size: 15px;
+            color: #c9c9e6;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #d2c6ff;
+            font-size: 16px;
+        }
+
+        .faculty-list {
+            background: #3a3f5f;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .faculty-list p {
+            margin-top: 0;
+            color: #d6cfff;
+            font-weight: bold;
+        }
+
+        .faculty-list ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .faculty-list li {
+            padding: 6px 0;
+            border-bottom: 1px solid #4b507a;
+            color: #e6e3ff;
+        }
+
+        .faculty-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Button */
+        .reveal-btn {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 12px 28px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            background: #cbbcff;
+            color: #2f334d;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .reveal-btn:hover {
+            background: #b7a6ff;
+            transform: translateY(-2px);
+        }
+
+        /* Hidden letter */
+        .letter {
+            display: none;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Thank You!</h1>
+    <p><strong>To my Supervisor and the Faculty Members of the IIDE Department</strong></p>
+
+    <div class="faculty-list">
+        <p><strong>With heartfelt thanks to:</strong></p>
+        <!-- Top Center Name -->
+        <p style="text-align:center; font-size:18px; font-weight:bold; color:#FAF3F0;">
+            Dr. Fermae L. Tamayao
+        </p>
+
+        <!-- Two Columns for Remaining Names -->
+        <div style="display:flex; justify-content:center; gap:60px; margin-top:20px;">
+            <ul style="list-style:none; padding:0; margin:0; text-align:left;">
+                <li>Dr. Rowena Dela Cruz</li>
+                <li>Ms. Ronalyn Erulin</li>
+                <li>Ms. Rogeline Martos</li>
+            </ul>
+            <ul style="list-style:none; padding:0; margin:0; text-align:left;">
+                <li>Dr. Rowena Del Rosario</li>
+                <li>Ms. Resha Ferrer</li>
+                <li>Mr. Raymond Bisnar</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="reveal-btn" onclick="toggleLetter()">Read the Thank You Letter</button>
+
+    <!-- Hidden Letter -->
+    <div class="letter" id="letterContent">
+        <p>
+            As my On-the-Job Training comes to an end this day January 27, 2026 (Tuesday),
+            I would like to sincerely thank my supervisor and all the faculty members for your
+            guidance, support, and encouragement throughout my OJT journey.
+        </p>
+
+        <p>
+            This experience has allowed me to grow not only as an IT student, but also as a
+            future professional. I was able to apply my technical knowledge in real workplace
+            situations while learning the importance of teamwork, responsibility, and
+            adaptability.
+        </p>
+
+        <div class="highlight">
+            <p><strong>During my OJT, I gained experience in:</strong></p>
+            <ul>
+                <li>Assisting faculty members with technical and office-related tasks.</li>
+                <li>Encoding, printing, and organizing important documents.</li>
+                <li>Basic system and internet configuration support.</li>
+                <li>Professional communication and work ethics.</li>
+            </ul>
+        </div>
+
+        <p>
+            Thank you for the patience, trust, and opportunities you gave me to learn and
+            improve. This OJT experience has been meaningful and will serve as a strong
+            foundation as I move forward in my IT career.
+        </p>
+
+        <p>
+            I am truly grateful for everything I have learned from this department, and I
+            hope to apply these lessons in the future.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p class="name">Jamaeca Estardo</p>
+        <p>IT OJT Trainee as an Admin Assistant</p>
+        <p>On-the-Job Training Completion, AY 2025-2026</p>
+    </div>
+
+</div>
+
+<script>
+    function toggleLetter() {
+        const letter = document.getElementById("letterContent");
+        const button = document.querySelector(".reveal-btn");
+
+        if (letter.style.display === "none" || letter.style.display === "") {
+            letter.style.display = "block";
+            button.textContent = "Close Letter";
+        } else {
+            letter.style.display = "none";
+            button.textContent = "Read the Thank You Letter";
+        }
+    }
+</script>
+
+</body>
+</html>
